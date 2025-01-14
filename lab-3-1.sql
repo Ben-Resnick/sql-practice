@@ -15,3 +15,7 @@
 -- +------+----------+
 
 
+select year, count (name) 
+from  teams 
+group by year 
+order by year;
