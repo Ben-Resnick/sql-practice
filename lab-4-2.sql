@@ -25,3 +25,8 @@
 -- | Ian        | Happ      |
 
 
+SELECT first_name, last_name
+FROM players
+JOIN stats ON players.id = player_id
+JOIN teams ON stats.team_id = teams.id
+WHERE teams.year = 2020  AND teams.name = 'Chicago Cubs';
